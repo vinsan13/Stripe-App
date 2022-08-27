@@ -1,0 +1,8 @@
+.loginCard{
+    margin: auto;
+    width: 30%;
+    height: 72%;
+    border: 2px solid black;
+    padding: 2%;
+    border-radius: 10%;
+}

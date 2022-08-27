@@ -1,0 +1,20 @@
+<%- include('partials/header'); -%>
+
+<% if(!user.plan){ %>
+    <div style="margin-bottom: 20%;">
+    <h2  class="text-center mx-4 my-4 text-info">You have no active plan. <h6 class="text-center"> (Re-login and check again if you have already subscribed for any plan.)</h6></h2>
+    </div>
+<% }else { %>
+    <h2 class="text-center mx-4 my-4 text-success">Your active plan</h2>
+    <div style="margin-bottom: 10%;"  class="d-flex justify-content-center">
+    <div class="card mx-4 my-4" style="width: 18rem;">
+        <div class="card-body">
+          <h3 class="card-title">Plan - <%- user.plan.name %></h3>
+          <hr>
+          <h4 class="card-text my-4"><%- user.plan.price %></h4>
+          <a href="#" class="btn btn-success">Active</a>
+        </div>
+      </div>
+    </div>
+<% } %>
+<%- include('partials/footer'); -%>

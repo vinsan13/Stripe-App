@@ -1,0 +1,142 @@
+<%- include('partials/header'); -%>
+
+<h2 class="text-center mt-4" > Subscription Plans</h2>
+
+
+<form action="/create-checkout-session" method="POST">
+<div class="wrapper">
+  <input type="radio" name="select" id="option-1" checked>
+  <input type="radio" name="select" id="option-2">
+    <label for="option-1" class="option option-1">
+      <div class="dot"></div>
+       <span>Monthly</span>
+       </label>
+    <label for="option-2" class="option option-2">
+      <div class="dot"></div>
+       <span>Yearly</span>
+    </label>
+ </div>
+
+
+
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+  <input value="price_1Lb7Y7SBgcwoSERnk3PN9T0a" type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+  <label class="btn btn-outline-primary" for="btnradio1">Mobile</label>
+
+  <input value="price_1Lb7YuSBgcwoSERn9DhnzF9F" type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btnradio2">Basic</label>
+
+  <input value="price_1Lb7Z9SBgcwoSERneAsyhdTp" type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btnradio3">Standard</label>
+
+  <input  value="price_1Lb7ZlSBgcwoSERnHIICO7Xl" type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btnradio4">Premium</label>
+</div>
+
+<input type="hidden" value="price_1Lb7Y7SBgcwoSERnk3PN9T0a" id="price" name="priceid">
+<input type="hidden" name="period" id="period" value="">
+
+
+
+<div  class="container">
+    <div class="row text-center">
+      <div class="col-4">
+        <h5 class="money">Monthly Price</h5>
+      </div>
+      <div class="col ">
+        <h5 class="money">₹ 100</h5>
+      </div>
+      <div class="col">
+        <h5 class="money">₹ 200</h5>
+      </div>
+      <div class="col ">
+        <h5 class="money">₹ 500</h5>
+      </div>
+      <div class="col ">
+        <h5 class="money">₹ 700</h5>
+      </div>
+    </div>
+    <hr>
+    <div class="row text-center">
+      <div class="col-4">
+        <h5>Video Quality</h5>
+      </div>
+      <div class="col">
+        <h5>Good</h5>
+      </div>
+      <div class="col">
+        <h5>Good</h5>
+      </div>
+      <div class="col">
+        <h5>Better</h5>
+      </div>
+      <div class="col">
+        <h5>Best</h5>
+      </div>
+    </div>
+    <hr>
+    <div class="row text-center">
+      <div class="col-4">
+        <h5>Resolution</h5>
+      </div>
+      <div class="col">
+        <h5>480p</h5>
+      </div>
+      <div class="col">
+        <h5>480p</h5>
+      </div>
+      <div class="col">
+        <h5>1080p</h5>
+      </div>
+      <div class="col">
+        <h5>4K + HDR</h5>
+      </div>
+    </div>
+    <hr>
+    <div class="row text-center">
+      <div class="col-4">
+        <h5>Devices you can use to watch</h5>
+      </div>
+      <div class="col">
+        <ul>
+          <li><h5>Phone</h5></li>
+          <li><h5>Tablet</h5></li>
+          
+        </ul>
+        
+      </div>
+      <div class="col">
+        <ul>
+          <li><h5>Phone</h5></li>
+          <li><h5>Tablet</h5></li>
+          <li><h5>Computer</h5></li>
+          <li><h5>TV</h5></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><h5>Phone</h5></li>
+          <li><h5>Tablet</h5></li>
+          <li><h5>Computer</h5></li>
+          <li><h5>TV</h5></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><h5>Phone</h5></li>
+          <li><h5>Tablet</h5></li>
+          <li><h5>Computer</h5></li>
+          <li><h5>TV</h5></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="text-center">
+  <button type="submit" class="btn btn-primary btn-lg" id="checkout">Checkout</button>
+  </div>
+
+</form>
+
+<%- include('partials/footer'); -%>
+
